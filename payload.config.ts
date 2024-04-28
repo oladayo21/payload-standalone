@@ -7,16 +7,13 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
 export default buildConfig({
-  secret: process.env.SECRET || "my-secret",
+  secret: process.env.SECRET || "",
   typescript: {
     outputFile: path.resolve(dirname, "payload.generated.ts"),
   },
   db: mongooseAdapter({
-    url: process.env.MONGO_URL || "mongodb://localhost:27017/payload",
+    url: process.env.MONGO_URL || "",
   }),
   //@ts-expect-error
   editor: null,
-  onInit(payload) {
-    console.log(payload);
-  },
 });
