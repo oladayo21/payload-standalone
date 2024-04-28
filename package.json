@@ -1,0 +1,22 @@
+{
+  "name": "payload-standalone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "payload": "tsx index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@payloadcms/db-mongodb": "3.0.0-beta.18",
+    "dotenv": "^16.4.5",
+    "payload": "3.0.0-beta.18",
+    "tsx": "^4.7.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
